@@ -103,7 +103,7 @@ main {
 
 /* Requisito 21 */
 #form-data {
-  
+  display: none;
   border: white solid 2px;
   flex-direction: column;
 
