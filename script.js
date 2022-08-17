@@ -53,53 +53,42 @@ checkbox.addEventListener('change', stateHandle);
 
 // Requisito 21
 
-const formData = document.querySelectorAll('#form-data p');
-const evaluationForm = document.getElementById('evaluation-form');
+// const formData = document.querySelectorAll('#form-data p');
+// const evaluationForm = document.getElementById('evaluation-form');
 
-function checkSelection(input) {
-  for (let index = 0; index < input.length; index += 1) {
-    if (input[index].checked) {
-      return input[index];
-    }
-    return null;
-  }
-}
+// function checkSelection(input) {
+//  for (let index = 0; index < input.length; index += 1) {
+//    if (input[index].checked) {
+//      return input[index];
+//    }
+//    return null;
+//  }
+// }
+// código não testado, função com parâmetros demais para passar pelo lint
+// function modifyForm(name, surname, email, house, family, subject, evaluation, obs) {
+//  formData[0].innerText = `Nome: ${nomeInput.value} ${sobrenomeInput.value}`;
+//  formData[1].innerText = `E-mail: ${emailInput.value}`;
+//  formData[2].innerText = `Casa: ${casaInput.value}`;
+//  formData[3].innerText = `Família: ${familiaInput.value}`;
+//  formData[4].innerText = `Matérias: ${materiaInput.value}`;
+//  formData[5].innerText = `Avaliação: ${avaliacaoInput.value}`;
+//  formData[6].innerText = `Observações: ${observacoesInput.textContent}`;
+// }
 
-function viewForm() {
-  const nomeInput = document.getElementById('input-name');
-  const sobrenomeInput = document.getElementById('input-lastname');
-  const emailInput = document.getElementById('input-email');
-  const casaInput = document.getElementById('house');
-  const familiaInput = document.querySelectorAll('#label-family input');
-  let materiaInput = document.querySelector('.container-conteudo');
-  materiaInput = checkSelection(materiaInput);
-  let avaliacaoInput = document.querySelectorAll('.avaliacao input');
-  avaliacaoInput = checkSelection(avaliacaoInput);
-  const observacoesInput = document.getElementById('textarea');
-  evaluationForm.style.display = 'none'; /* esconde o primeiro formulário quando o botão é clicado */
-  formData[0].innerText = `Nome: ${nomeInput.value} ${sobrenomeInput.value}`;
-  formData[1].innerText = `E-mail: ${emailInput.value}`;
-  formData[2].innerText = `Casa: ${casaInput.value}`;
-  formData[3].innerText = `Família: ${familiaInput.value}`;
-  formData[4].innerText = `Matérias: ${materiaInput.value}`;
-  formData[5].innerText = `Avaliação: ${avaliacaoInput.value}`;
-  formData[6].innerText = `Observações: ${observacoesInput.textContent}`;
-}
-// for (let index = 0; index < formData.length; index += 1) {
-  // const element = form[index];
-//  formData[index].innerText = `Nome: ${nomeInput} ${sobrenomeInput}`;
+// function viewForm() {
+//  const nomeInput = document.getElementById('input-name');
+// const sobrenomeInput = document.getElementById('input-lastname');
+//  const emailInput = document.getElementById('input-email');
+//  const casaInput = document.getElementById('house');
+//  const familiaInput = document.querySelectorAll('#label-family input');
+//  let materiaInput = document.querySelector('.container-conteudo');
+//  materiaInput = checkSelection(materiaInput);
+//  let avaliacaoInput = document.querySelectorAll('.avaliacao input');
+//  avaliacaoInput = checkSelection(avaliacaoInput);
+//  const observacoesInput = document.getElementById('textarea');
+//  evaluationForm.style.display = 'none'; /* esconde o primeiro formulário quando o botão é clicado */
+//  modifyForm(nomeInput, sobrenomeInput, emailInput, casaInput, familiaInput, materiaInput, avaliacaoInput, observacoesInput);
+//  formData.style.display = 'initial';
 // }
-// formData[0].innerText.style.color = 'red';
-// formData.style.display = 'initial';
-// form = [Nome, Email, Casa, Familia, Materias, Avaliação, Observações];
-// function modifyForm(form) {
-// }
-// formData.innerHTML = `Nome: ${nomeInput.value} ${sobrenomeInput.value};
-// E-mail: ${emailInput.value};
-// Casa: ${casaInput.value};
-// Família: ${familiaInput.value};
-// Matérias: ${materiaInput.value};
-// Avaliação: ${avaliacaoInput.value};
-// Observações: ${observacoesInput.value}`;
 // event.preventDefault()});
-buttonSend.addEventListener('click', viewForm);
+// buttonSend.addEventListener('click', viewForm);
