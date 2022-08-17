@@ -1,6 +1,6 @@
 // Requisito 3 - Botão que valida o formulário
 function validar() {
-  const email = document.getElementById('input-email');
+  const email = document.getElementById('email');
   const senha = document.getElementById('input-senha');
 
   const emailValue = email.value;
@@ -48,6 +48,7 @@ function stateHandle() {
   }
 }
 checkbox.addEventListener('change', stateHandle);
+
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
 
 // Requisito 21
@@ -100,5 +101,5 @@ function viewForm() {
 // Matérias: ${materiaInput.value};
 // Avaliação: ${avaliacaoInput.value};
 // Observações: ${observacoesInput.value}`;
-
+// event.preventDefault()});
 buttonSend.addEventListener('click', viewForm);

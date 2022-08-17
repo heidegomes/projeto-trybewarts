@@ -106,6 +106,7 @@ main {
   
   border: white solid 2px;
   flex-direction: column;
+
   /* width: 675px; */
 }
 
@@ -122,6 +123,13 @@ footer {
 
 .trybewarts-header-logo {
   width: 60px;
+}
+
+#email {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
 }
 
 #input-email {
