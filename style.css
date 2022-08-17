@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: fantasy;
   overflow: hidden; /* todos os elementos que 'vazarem' para fora da largura/altura
                     especificada são cortados e escondidos. */
 }
@@ -54,7 +55,6 @@
   color: white;
   font-size: 50px;
   margin: 10px;
-  font-family: fantasy;
 }
 
 body {
@@ -103,7 +103,7 @@ main {
 
 /* Requisito 21 */
 #form-data {
-  display: none;
+  
   border: white solid 2px;
   flex-direction: column;
   /* width: 675px; */
@@ -112,8 +112,7 @@ main {
 footer {
   position: absolute;
   bottom: 0;
-  margin-top: 3%;
-  width: 98.9%;
+  width: 100%;
   background-color: rgba(36, 38, 38, 15);
   color: white;
   padding: 10px;
@@ -129,14 +128,12 @@ footer {
   border: 1px solid rgba(199, 212, 208, 83);
   border-radius: 5px;
   padding: 10px;
-  font-family: fantasy;
 }
 
 #input-senha {
   border: 1px solid rgba(199, 212, 208, 83);
   border-radius: 5px;
   padding: 10px;
-  font-family: fantasy;
 }
 
 #botao {
@@ -144,7 +141,6 @@ footer {
   padding: 10px;
   border-radius: 5px;
   color: white;
-  font-family: fantasy;
   font-size: 18px;
 }
 
@@ -153,8 +149,8 @@ footer {
   padding: 10px;
   border-radius: 5px;
   color: white;
-  font-family: fantasy;
   font-size: 20px;
+  filter: brightness(30%); /* deixa o botão escurecido */
 }
 
 .email-casa {
@@ -173,7 +169,6 @@ footer {
   border: 1px solid rgba(199, 212, 208, 83);
   border-radius: 5px;
   padding: 10px;
-  font-family: fantasy;
   width: 45%;
 }
 
@@ -181,13 +176,11 @@ footer {
   border: 1px solid rgba(199, 212, 208, 83);
   border-radius: 5px;
   padding: 10px;
-  font-family: fantasy;
   width: 45%;
 }
 
 #house {
   border: 1px solid rgba(199, 212, 208, 83);
-  font-family: fantasy;
   padding: 5px;
   background-color: white;
   width: 200px;
@@ -220,7 +213,6 @@ footer {
   width: 70%;
   flex-flow: row wrap;
   align-items: center;
-  font-family: fantasy;
   justify-content: center;
 }
 
